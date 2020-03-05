@@ -2,9 +2,9 @@ package com.matheuspbuffon;
 
 public class Car {
 
-    double mileage;
-    int price;
-    int doors;
+    private double mileage;
+    private int price;
+    private int doors;
 
     public Car() {
         /*this.mileage = 5.23;
@@ -19,8 +19,32 @@ public class Car {
         this.doors = doors;
     }
 
-    public void carStart() {
-        System.out.println("Car Started");
+    public String carStart() {
+        return "Car Started";
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
     }
 
     public void carShutOff() {
