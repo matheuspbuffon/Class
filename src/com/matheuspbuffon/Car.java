@@ -6,6 +6,13 @@ public class Car {
     int price;
     int doors;
 
+    public Car() {
+        /*this.mileage = 5.23;
+        this.price = 50000;
+        this.doors = 4;*/
+        this(5.23, 50000, 4);
+    }
+
     public Car(double mileage, int price, int doors) {
         this.mileage = mileage;
         this.price = price;
